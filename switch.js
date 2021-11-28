@@ -1,8 +1,8 @@
 // swtich statement is like else..if 
-// change fruitprice and run the code to see price of differnt fruit everytime 
+// change fruitname and run the code to see price of differnt fruit everytime 
 //default case will execute when the fruit is not listed in case key
-let fruitprice = 'kiwi';
-switch (fruitprice) {
+let fruitname = 'kiwi';
+switch (fruitname) {
   case "mango":
     console.log("price of mango is 170rs kg");
     break;
@@ -28,6 +28,6 @@ switch (fruitprice) {
     break;
 
   default:
-    console.log(` ${fruitprice} is not avaiable today come 2mro`);
+    console.log(` ${fruitname} is not avaiable today come 2mro`);
     break;
 }

@@ -13,7 +13,7 @@ else
  console.log(`${a} is a string value`) ;  
 }
 
-// max number of d e f 
+// max number of d e f (3 numbers )
 
 // let d = 600 , e = 400 , f = 90;
 // if(d > e && d > f)

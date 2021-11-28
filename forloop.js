@@ -1,8 +1,10 @@
+// uncomment each  block of code and run the code 
+
 // // n*i=m  table of 19
-let n=19;
-for (let i = 1; i <= 20; i++) {
-    console.log(n*i);
-}
+// let n=19;
+// for (let i = 1; i <= 10; i++) {
+//     console.log(n*i);
+// }
 
 // // 0 to 10 print 
 // for (let i = 0; i <= 10; i++) {
@@ -15,17 +17,17 @@ for (let i = 1; i <= 20; i++) {
 // }
 
 
-// // addtion of whole numbers from 1 to 20
-//  let count=0;
-// for (let j = 1 ; j <= 20; j++) {
+// // addtion of natural numbers from 1 to 20
+ let count=0;
+for (let j = 1 ; j <= 20; j++) {
 
-//    count+=j;
-// }
-//     console.log(count);
+   count+=j;
+}
+    console.log(count);
       
 //  k = 0 print even numbers 
 //  k = 1 print odd numbers  (replace k value with o or 1 to check changes )
-//    for (let k = 1 ; k <=30; k=k+2) {
+//    for (let k = 0 ; k <=50; k=k+2) {
 //        console.log(k);
        
 //    }
