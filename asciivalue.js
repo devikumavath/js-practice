@@ -14,6 +14,6 @@ console.log(text.codePointAt(0));
 
 
 
-// ascii value and statement on terminal using backticks & +
+// ascii values 
 console.log(`ascii value of ${char} is  ` + char.charCodeAt(0));
 
