@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>javascript output</h2>
+    <ol>
+      <li>innerHTML</li>
+      <summary>writing into html element</summary>
+      <li>document.write()</li>
+      <summary>writing into html output</summary>
+      <details>
+        <ul>
+          <li>used only for testing</li>
+          <li>
+            using this after html document is loaded will delete all existing
+            html
+          </li>
+        </ul>
+      </details>
+      <li>window.alert()</li>
+      <summary>alert popup box</summary>
+      <li>console.log()</li>
+      <summary>writing into browser console</summary>
+    </ol>
+
+    <p id="demo"></p>
+
+    <!-- <button type="button" onclick="document.write(1+1 + '- in html(document.write)')"> clcik me</button> -->
+
+    <button type="button" id="demo" onclick="window.print()">
+      print this page
+    </button>
+
+    <script>
+      document.getElementById("demo").innerHTML = 5 + 19 + " -   innerHTML";
+
+      // document.write(5+5 + " -   document.write");
+
+      // window.alert(4+4 + '- alert');
+
+      //console.log(3 + 2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2,
+      details,
+      label,
+      button,
+      p,
+      input {
+        color: aqua;
+        text-transform: capitalize;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        border-radius: 50%;
+        border: 2px solid aqua;
+      }
+
+      .shape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+        align-items: center;
+      }
+
+      .square {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        }
+
+      .rectangle {
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+      } 
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 50%;
+      } 
+
+      .oval {
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        border-radius: 100px/50px;
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom:100px solid aqua ;
+    
+      }
+
+      .trapezoid {
+        border-bottom: 100px solid aqua;
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+        height: 0;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Average calculater</h2>
+      <details>calculating Average of two mid exams (max marks = 25)</details>
+      <label> mid1 marks :<input type="text" id="1" /></label>
+      <label> mid2 marks :<input type="text" id="2" /></label>
+      <button type="button" onclick="myfun()">calculater</button>
+      <p id="result"></p>
+    </div>
+
+    <div class="shape">
+        <div class="square">...</div>
+
+    <div class="rectangle">...</div>
+
+    <div class="circle">...</div>
+
+    <div class="oval">...</div>
+
+    <div class="triangle">...</div>
+
+    <div class="trapezoid">...</div>
+    </div>
+    <script>
+      function myfun() {
+        const num1 = parseInt(document.getElementById("1").value);
+        console.log(num1);
+        const num2 = parseInt(document.getElementById("2").value);
+        console.log(num2);
+
+        // console.log("hiii");
+
+        const avg = (num1 + num2) / 2;
+        console.log(avg);
+
+        document.getElementById("result").innerHTML = avg;
+      }
+    </script>
+  </body>
+</html>

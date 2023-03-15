@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whats the Date Today</title>
+
+    <style>
+
+        .wrapper {
+            background-color: skyblue;
+            text-align: center;
+           
+        }
+
+        h2 , p {
+            text-transform: capitalize;
+            
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        button {
+            text-transform: capitalize;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        button:hover {
+           
+           cursor: pointer;
+          
+        }
+
+    </style>
+
+    
+  </head>
+  <body>
+
+    <div class="wrapper">
+    <h2>Date & Time of Tonight</h2>
+    <p>displaying todays date using JavaScript Date() Function</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('date').innerHTML=Date()"
+    >
+      click me
+    </button>
+
+    <p id="date"></p>
+
+</div>
+  </body>
+</html>
