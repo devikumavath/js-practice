@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arrow function</h1>
+
+    <script>
+      const sayhello = (name, greeting) => {
+        console.log(greeting + "  " + name);
+      };
+      sayhello("devi", "good afternoon");
+
+      const x = {
+        name: "devi",
+        exp: 20,
+        show: function () {
+
+
+          // this keyword will not work in the arrow function and will not refer to object  (it is now window object)
+
+          // setTimeout(function(){
+          //   console.log(`the name is ${this.name} and exp is ${this.exp}`);
+          // }, 2000);
+
+          // you can fix above problem with this code
+
+          // let that = this
+          // setTimeout(function(){
+          //     console.log(this);
+          //     console.log(`the name is ${this.name} and exp is ${this.exp}`);
+          //     console.log(`the name is ${that.name} and exp is ${that.exp}`);
+          // }, 1000);
+          // }
+
+          // console.log(`the name is ${this.name} and exp is ${this.exp}`);
+
+
+          // or you can use lexical this - arrow function 
+
+          setTimeout(() => {
+            console.log(`the name is ${this.name} and exp is ${this.exp}`);
+          }, 2000);
+
+
+        },
+
+
+      };
+
+      //   console.log(x.name, x.exp);
+
+      x.show();
+    </script>
+  </body>
+</html>

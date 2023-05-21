@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // session storage exists only within current browser tab
+      //It will survive page refresh but not not in close/open of the tap
+
+      //   sessionStorage.getItem()
+      //   sessionStorage.setItem()
+      //   sessionStorage.removeItem()
+      //   sessionStorage.clear()
+      //   sessionStorage.key()
+      //   sessionStorage.length()
+
+      //storage event
+      //when the data is updated in sessionstorage or localstorage , storage event triggers with these properties
+
+      // key -  the key
+      // oldvalue - previous value
+      // newvalue - new value
+      // url - page url
+      // storagearea = local or session
+
+      window.onstorage = (e) => {
+        alert("changed");
+        console.log(e);
+      };
+    </script>
+  </body>
+</html>

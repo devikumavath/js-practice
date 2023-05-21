@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>static methods</h1>
+    <p>Static methods are used to implement functions that belong to a class as a whole and not to any particular object.</p>
+    <p>Static methods aren’t available for individual objects.</p>
+
+    <script>
+      class animal {
+        constructor(name) {
+          this.name = animal.capitalize(name);
+        
+        }
+
+        walk() {
+          alert(animal.capitalize(this.name) + " is walking");
+        }
+
+        // static method 
+        static capitalize(name) {
+          return (
+            name.charAt(0).toUpperCase() +
+            name.substr(1, name.length)
+          );
+        }
+      }
+
+      let dog = new animal("max");
+    //   let dog = new animal(animal.capitalize("rodo"))
+      dog.walk();
+    </script>
+  </body>
+</html>

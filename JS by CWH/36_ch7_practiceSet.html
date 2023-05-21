@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      background-color: pink;
+    }
+
+    nav ul li {
+      list-style: none;
+      padding: 0px 23px;
+    }
+  </style>
+  <body>
+    <!--1Q  create a nav bar and change color of its first element to red   -->
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li>contact</li>
+      </ul>
+    </nav>
+
+    <!-- 2Q create a table withoud tbody and now use view page source button to check whether it has a tbody or not -->
+    <table>
+      <td>hello</td>
+      <tr>
+        hello 1
+      </tr>
+      <tr>
+        hello 2
+      </tr>
+      <tr>
+        hello 3
+      </tr>
+    </table>
+
+
+    <!-- 3Q Create an element with 3 children now change the color of first and last element to green  -->
+
+    <script>
+    //   document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+    //     "red";
+
+
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+        "green";
+        document.getElementsByTagName("nav")[0].lastElementChild.style.color =
+        "green";
+
+        array.from(document.getElementsByTagName("li")).forEach((element )=> {
+            Element.style.background = "red";
+        });
+
+
+
+    </script>
+  </body>
+</html>

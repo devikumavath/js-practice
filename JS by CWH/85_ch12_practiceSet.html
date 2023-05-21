@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ch 12 practice set</h1>
+  </body>
+
+  <script>
+    // 1Q write a js program to print the follwoing after 2 second delay
+
+    // const greet = () => {
+    //   setTimeout(() => {
+    //     console.log("hello \nworld");
+    //   }, 2000);
+    // };
+
+    // greet();
+
+    // const a = async (text) => {
+    //   return new Promise((reslove, reject) => {
+    //     setTimeout(() => {
+    //       reslove(text);
+    //     }, 2000);
+    //   });
+    // };
+
+    // (async () => {
+    //   let text = await a("hello");
+    //   console.log(text);
+    //   text = await a("world");
+    //   console.log(text);
+    // })();
+
+    // 2Q write a js program to find average of numbers in an array using spread syntax
+
+    // function sum(a, b, c) {
+    //   return a + b + c;
+    // }
+    // let x = [2, 4, 6];
+    // console.log(sum(...x));
+
+    //3Q write a js function which resolves a promise after n seconds . the function takes n as the paramenter use the IIFE to execute the function with different values of n
+
+    // const a = async (text, n = 2) => {
+    //   return new Promise((reslove, reject) => {
+    //     setTimeout(() => {
+    //       reslove(text);
+    //     }, 2000 * n);
+    //   });
+    // };
+
+    // (async () => {
+    //   let text = await a("i am resloving after 1 second ", 1);
+    //   console.log(text);
+    //   text = await a("i am resloving after 4 seconds", 4);
+    //   console.log(text);
+    // })();
+
+    //4Q  write a simple intrest calculator using js
+
+    function SI(p, r, t) {
+      return (p * r * t) / 100;
+    }
+    console.log(SI(1000, 5, 1));
+  </script>
+</html>
+

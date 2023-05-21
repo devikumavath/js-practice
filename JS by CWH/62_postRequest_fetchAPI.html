@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      <!-- //post request is sent in  options of fetch -->
+
+   const createTodo =    async () => {
+
+      let options = {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        }, 
+        body : JSON.stringify({
+          title: "foo",
+          body: "bar",
+          userId: 1,
+        }),
+      };
+
+      
+          let p = await  fetch("https://jsonplaceholder.typicode.com/posts", options)
+
+          let response = await p.json();
+          return response
+    };
+
+    const mainfun = async() => {
+      let todo =   await createTodo()
+      console.log(todo);
+    }
+
+    mainfun();
+
+
+        // .then((response) => response.json())
+        // .then((json) => console.log(json));
+    </script>
+  </body>
+</html>

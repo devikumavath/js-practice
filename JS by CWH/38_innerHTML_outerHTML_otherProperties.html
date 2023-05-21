@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>hello world
+    <span id="first" hidden> <bold>hey</bold> i am span</span>
+
+
+    <script>
+
+        // innerHTML , outerHTML --> VALID ONLY FOR ELEMENT NODES ONLY 
+        // .data--> TO ACCESS DATA OF TEXT N COMMENTS 
+        // textContent --> whole website as text
+        //hidden property on element to hinde 
+
+        let x = document.getElementsByName('span')[0]
+        console.log(x);
+        let y= document.getElementsByName('span')[0]
+        console.dir(y);
+
+        console.log(document.getElementsByName('span')[0]);
+
+       console.log(document.body.firstChild.nodeName);
+
+      console.log(document.body.firstChild.data);
+
+       console.log(document.body.firstElementChild.nodeName);
+
+       console.log(document.getElementById('first').innerHTML);
+
+       console.log(first.innerHTML = "<i>i am span </i>");
+
+
+       
+       console.log(document.getElementById('first').outerHTML);
+
+    //    console.log(first.outerHTML = "<div> devi</div>");
+
+
+    console.log(document.body.textContent);
+
+    console.log(first.hidden = false);
+
+
+
+    </script>
+    
+</body>
+</html>

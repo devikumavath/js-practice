@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>constructor overriding</h1>
+
+    <script>
+      class employee {
+        constructor(name) {
+           console.log("employee's constructor is here");
+           this.name = name
+        }
+
+        login() {
+          console.log(` has logged in`);
+        }
+
+        logout() {
+          console.log(` has logged out`);
+        }
+
+        requestLeave(days) {
+          console.log(`has requested for ${days} days of leave`);
+        }
+      }
+
+      class programmer extends employee {
+
+        
+      // constructor(...args) {   --> if there is no constructor in the child class this is created automatically 
+      //   super(...args)
+      // }
+
+      
+      constructor(name) {
+        super(name)
+
+        console.log(`this is newly written constructor`);
+      }
+
+
+
+
+
+        requestCoffee(x) {
+          console.log(`${this.name} have requested for a ${x} cup of coffee`);
+        }
+
+        requestLeave(days) {
+          super.requestLeave(days + 1);
+
+          console.log("one extra");
+        }
+      }
+
+      let pro = new programmer("devi");
+      pro.login();
+      pro.logout();
+      pro.requestLeave(5);
+      pro.requestCoffee(3);
+    </script>
+  </body>
+</html>

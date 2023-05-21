@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+
+        class : template
+        object : instance of the class
+
+        example : class (ticket registration form) object(any person)
+        
+        */
+
+      class railwayForm {
+        fill(name, no) {
+          this.name = name;
+          this.no = no;
+        }
+
+        sumbit() {
+          alert(
+            this.name +
+              " form  is submitted and your train number is " +
+              this.no
+          );
+        }
+
+        cancel() {
+          alert(this.name + " this form has been cancelled");
+        }
+      }
+
+      let devi = new railwayForm();
+      devi.fill("devi", 14327);
+
+      let harry = new railwayForm();
+      harry.fill("harry", 12222);
+
+      harry.sumbit();
+      devi.sumbit();
+
+      harry.cancel();
+    </script>
+  </body>
+</html>

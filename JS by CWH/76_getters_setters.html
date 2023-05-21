@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>getter and setter</h1>
+    <p></p>
+    <script>
+      class animal {
+        constructor(name) {
+          this._name = name;
+        }
+
+        fly() {
+          //   alert(this.name + " is flying");
+          console.log(this.name + " is flying");
+        }
+
+        //getter
+        get name() {
+          return this._name;
+        }
+
+        //setter
+        set name(newName) {
+          this._name = newName;
+        }
+      }
+
+      class rabbit extends animal {
+
+        eatCarrot() {
+            console.log("eats carrot");
+        }
+
+      }
+
+      let bird = new animal("mitu");
+      bird.fly();
+      console.log(bird._name);
+
+      bird._name = "jack";
+      console.log(bird._name);
+
+      let r = 23;
+
+      console.log(bird instanceof animal);
+
+      console.log(bird instanceof rabbit);
+
+      console.log(rabbit instanceof animal);
+
+      console.log(animal instanceof animal);
+
+      
+     
+      
+      console.log(r instanceof animal);
+    </script>
+  </body>
+</html>

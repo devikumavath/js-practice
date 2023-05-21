@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div>
+        <p>this is me and i am great</p>
+        <span>sibling</span>
+      </div>
+    <!-- 
+        direct or deeply nested element of an element are called its children
+        ex : head and body are direct child of html  & head , body are sibling
+        node list  use array from to convert into array
+
+     -->
+
+    <script>
+        // console.log(document.body.firstChild);
+
+        // console.log(document.body.lastChild);
+
+        // console.log(document.body.childNodes);
+
+        console.log(Element.childNodes[1]);  //first child
+
+        console.log(Element.childNodes.length-1); // lastchild
+
+        console.log(document.hasChildNodes); // 0 1 
+
+        let arr = Array.from(document.body.childNodes)
+        console.log(arr);
+
+       
+    </script>
+  </body>
+</html>
+

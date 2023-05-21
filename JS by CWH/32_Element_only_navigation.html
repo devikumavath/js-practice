@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <style>
+        html , body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            background-color: grey;
+            padding: 15px 0;
+            color: whitesmoke;
+
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- //comment -->
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About me</li>
+        <li>Hire me</li>
+      </ul>
+    </nav>
+
+    <div>
+      <p>Hey i am a good girl</p>
+    </div>
+
+    <script>
+        const changeBodyRed = () => {
+          document.body.firstElementChild.style.background = "red";
+        };
+      console.log(document.body.firstChild);
+      let b = document.body;
+      console.log("first child of b is :", b.firstChild); // text , comment , element node
+      console.log("first element child of b is : ", b.firstElementChild); // element node
+
+    </script>
+  </body>
+</html>

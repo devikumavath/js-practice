@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = {
+        name2: "devi",
+        lang: "javascript",
+
+        run: () => {
+          alert(" self run");
+        },
+      };
+
+      console.log(a);
+      console.log(a.toString());
+      console.log(a.valueOf());
+
+      // setting prototype
+
+      let p = {
+        run: () => {
+          alert("run");
+        },
+      };
+
+      a.__proto__ = p;
+
+      p.__proto__ = {
+        name: "jackie",
+      };
+
+      a.__proto__ = p;
+      a.run();
+      console.log(a.name);
+    </script>
+  </body>
+</html>

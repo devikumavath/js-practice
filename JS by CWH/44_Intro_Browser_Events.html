@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container" >
+        <button > click me </button>
+    </div>
+    
+    
+    <!-- 
+        mouse , keyboard , form element , document events 
+     -->
+<!-- 
+     <div class="container" onmouseenter="console.log('container ke andar mouse gaya')">
+        <button onclick="console.log('container mein click hua')"> click me </button>
+     </div> -->
+
+
+     <script>
+      let a =   document.getElementsByClassName("container")[0]
+      a.onclick = () => {
+        let b  = document.getElementsByClassName("container")[0]
+        b.innerHTML = "hello world"
+      }
+     </script>
+    
+</body>
+</html>

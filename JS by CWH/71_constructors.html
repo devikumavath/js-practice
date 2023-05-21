@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <!-- 
+
+
+    <script>
+           class railwayForm {
+
+
+            constructor( name , no) {
+                console.log("constructor called " + name + " " + no);
+                    this.name = name;
+          this.no = no;
+            }
+        // fill(name, no) {
+        //   this.name = name;
+        //   this.no = no;
+        // }
+
+        sumbit() {
+          alert(
+            this.name +
+              " form  is submitted and your train number is " +
+              this.no
+          );
+        }
+
+        cancel() {
+          alert(this.name + " this form has been cancelled");
+        }
+      }
+
+      let devi = new railwayForm( "devi" , 1243567);
+    //   devi.fill("devi", 14327);
+
+      let harry = new railwayForm("harry" , 420420);
+    //   harry.fill("harry", 12222);
+
+      harry.sumbit();
+      devi.sumbit();
+
+      harry.cancel();
+    </script> -->
+
+    <script>
+      class railwayForm {
+        constructor(name, trainno, address ) {
+          console.log("constructor called " + name + " " +  trainno);
+          this.name = name;
+          this.trainno = trainno;
+          this.address = address
+        }
+
+        submit() {
+          alert(
+            this.name +
+              " form  is submitted and your train number is " +
+              this.trainno
+          );
+        }
+
+        cancel() {
+          alert(this.name + " this form has been cancelled " + this.trainno);
+          this.trainno = 0
+        }
+      }
+
+      let p1 = new railwayForm("devi" , 123456 , "bng")
+      p1.submit()
+    </script>
+  </body>
+</html>

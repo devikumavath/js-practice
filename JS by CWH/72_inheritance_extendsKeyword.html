@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <h1>Inheritance and extends keyword</h1>
+  <body>
+    <script>
+      class animal {
+        //parent class
+        constructor(name, color) {
+          (this.name = name), (this.color = color);
+        }
+
+        run() {
+          console.log(this.name + " is running");
+        }
+
+        shout() {
+          console.log(this.name + " is shouting");
+        }
+      }
+
+      class monkey extends animal {
+        // child class
+        eat() {
+          console.log(this.name + " eats banana");
+        }
+
+        jump() {
+          console.log(this.name + " jumps");
+        }
+      }
+
+      let ani = new animal("bufflo", "black");
+      ani.run();
+      ani.shout();
+
+      let m = new monkey("chumpu", "red");
+      m.eat();
+      m.jump();
+    </script>
+  </body>
+</html>

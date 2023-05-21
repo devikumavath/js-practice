@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .bulb {
+      height: 254px;
+      width: 254px;
+
+      background-image: linear-gradient(yellow, orange);
+      /* background-color: rgb(red, green, blue); */
+      /* background-color: pink; */
+      border-radius: 50%;
+      margin-top: 20px;
+      /* border: 1px solid black; */
+    }
+
+    .bulbcontainer {
+      height: 254px;
+      width: 254px;
+    }
+  </style>
+  <body>
+    <!-- // 1Q) 😁write a program to show differnt alert when diffwent buttons are click  -->
+    <button onclick="alert('click me 1 ')">click me 1</button>
+    <button onclick="alert('click me 2 ')">click me 2</button>
+
+    <!-- //2Q)😀 create a website which is capable of storing bookmarks of your fav website using href -->
+    <h1>Bookmarks</h1>
+    <a target="_blank">
+      <button id="google">google</button>
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <button id="insta">instagram</button>
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+      <button id="fb">facebook</button>
+    </a>
+
+    <!-- //5Q)😀  create a glowing bulb effect using classlist toggle metgod in javaceipt  -->
+    <div class="bulb bulbcontainer" id="bulb"></div>
+
+    <script>
+      // 3Q) 😀repeat question 3 using event listeners
+      document.getElementById("google").addEventListener("click", function () {
+        window.location = "https://www.google.com";
+        win.focus();
+      });
+
+      <!-- //4Q)😀 write a javascript program to keep fetching contents of a website (every 5 sec) -->
+
+      const fetchContent = async (url) => {
+        con = await fetch(url);
+        let a = await con.json();
+        return a;
+      };
+
+      setInterval(async function () {
+        let url = "https://jsonplaceholder.typicode.com/todos/1";
+        console.log(await fetchContent(url));
+      }, 3000);
+
+      setInterval(async function () {
+        document.querySelector("#bulb").classList.toggle("bulb");
+      }, 500);
+    </script>
+  </body>
+</html>

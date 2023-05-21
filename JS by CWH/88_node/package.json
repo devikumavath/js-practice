@@ -1,0 +1,16 @@
+{
+  "name": "88_npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "88_npm_nodejs_packages.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pdf-creator-node": "^2.3.5"
+  }
+}

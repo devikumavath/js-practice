@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Method overriding</h1>
+
+    <script>
+      class employee {
+
+
+        constructor(name) {
+            this.name = name;
+
+        }
+
+        login() {
+          console.log(` ${this.name} has logged in`);
+        }
+
+        logout() {
+          console.log(`${this.name} has logged out`);
+        }
+
+        requestLeave(days) {
+          console.log(`${this.name} has requested for ${days} days of leave`);
+        }
+      }
+
+      class programmer extends employee {
+        requestCoffee() {
+          console.log(`${this.name} have requested for a cup of coffee`);
+        }
+
+
+        requestLeave(days) {
+
+            super.requestLeave(days+1);
+       
+          console.log("one extra")
+        }
+      }
+
+    //   let emp = new employee("emp");
+    //   emp.login();
+    //   emp.logout();
+    //   emp.requestLeave(3);
+
+      let pro = new programmer("devi");
+      pro.login();
+      pro.logout();
+      pro.requestLeave(5);
+      pro.requestCoffee();
+    </script>
+  </body>
+</html>

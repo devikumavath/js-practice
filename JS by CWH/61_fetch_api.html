@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //js  can be used to send and return info from the N/W when needed(AJAX)
+      // fetch(url , options)
+      // options - headers
+
+
+      let p = fetch("https://goweather.herokuapp.com/weather/hyd");
+      p.then((value) => {
+        console.log(value.headers);
+        console.log(value.status);
+        console.log(value.ok);
+
+        return value.json();
+        //    return value.text()
+        //    return value.formData()
+        //    return value.blob()
+      }).then((value) => {
+        console.log(value);
+      });
+    </script>
+  </body>
+</html>
